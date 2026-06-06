@@ -10,6 +10,7 @@ async function loadStatus() {
 }
 loadStatus();
 
+
 // SHOOTING STAR LOGIC
 const star = document.getElementById("shootingStar");
 
