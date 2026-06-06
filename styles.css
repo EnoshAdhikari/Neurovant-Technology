@@ -1,0 +1,130 @@
+/* GLOBAL FONT SETTINGS — MONOSPACE ONLY */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    background: #05010a;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* GALAXY BACKGROUND */
+#galaxy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 20%, #3b0066, transparent 60%),
+                radial-gradient(circle at 80% 80%, #220044, transparent 60%),
+                radial-gradient(circle at 50% 50%, #550088, transparent 70%);
+    animation: galaxyMove 20s ease-in-out infinite alternate;
+    z-index: -5;
+}
+
+@keyframes galaxyMove {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2) translate(-30px, -30px); }
+}
+
+/* STARFIELD CANVAS */
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    pointer-events: none;
+}
+
+/* SHOOTING STAR (HEAD) */
+#shootingStar {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle, #ffffff, #ff00ff);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    filter: drop-shadow(0 0 25px #ff00ff);
+    transform-origin: center;
+}
+
+/* SHOOTING STAR TAIL */
+#shootingStar .tail {
+    position: absolute;
+    top: 50%;
+    left: -140px;
+    width: 140px;
+    height: 6px;
+    background: linear-gradient(to left, #ff00ff, transparent);
+    border-radius: 6px;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    filter: blur(3px);
+}
+
+/* PARTICLE SPARKS */
+.particle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: #ff00ff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.8;
+    filter: blur(1px);
+}
+
+/* HERO SECTION */
+.hero {
+    padding: 70px 20px;
+    background: none;
+}
+
+/* HERO LOGO */
+.hero-logo {
+    width: 48%;
+    max-width: 420px;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 25px #ff00ff);
+}
+
+/* INTERACTIVE BOXES */
+.interactive-box {
+    background: rgba(255, 0, 255, 0.05);
+    border: 1px solid rgba(255, 0, 255, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    transition: 0.25s ease;
+}
+
+.interactive-box:hover {
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.6);
+    border-color: rgba(255, 0, 255, 0.6);
+    background: rgba(255, 0, 255, 0.12);
+}
+
+/* STATUS BOX */
+.status-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #120018;
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    opacity: 0.6;
+}
