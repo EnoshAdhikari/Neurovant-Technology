@@ -3,13 +3,12 @@ async function loadStatus() {
     try {
         const response = await fetch("status.json");
         const data = await response.json();
-        document.getElementById("status-box").innerText = data.development_stage;
+        document.getElementById("status-box").innerText = data.status;
     } catch (error) {
         document.getElementById("status-box").innerText = "Error loading status.";
     }
 }
 loadStatus();
-
 
 // SHOOTING STAR LOGIC
 const star = document.getElementById("shootingStar");
