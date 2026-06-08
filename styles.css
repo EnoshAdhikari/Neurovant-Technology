@@ -65,9 +65,7 @@ body {
     width: 220px;
     height: auto;
     filter: drop-shadow(0 0 20px #00aaff);
-
     border-radius: 20px;   /* makes the edges rounded */
-    overflow: hidden;      /* ensures the image clips cleanly */
 }
 /* INTERACTIVE BOXES */
 .interactive-box {
