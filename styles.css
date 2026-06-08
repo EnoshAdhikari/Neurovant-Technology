@@ -106,3 +106,20 @@ footer {
     padding: 20px;
     opacity: 0.7;
 }
+
+.waitlist-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.waitlist-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+}
+
