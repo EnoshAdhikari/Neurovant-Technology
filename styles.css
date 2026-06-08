@@ -61,12 +61,12 @@ body {
 }
 
 .hero-logo {
-    .hero-logo {
     width: 220px;
     height: auto;
     filter: drop-shadow(0 0 20px #00aaff);
-    border-radius: 20px;   /* makes the edges rounded */
+    box-border: 7px;
 }
+
 /* INTERACTIVE BOXES */
 .interactive-box {
     background: rgba(255, 255, 255, 0.05);
