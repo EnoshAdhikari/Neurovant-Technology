@@ -64,7 +64,7 @@ body {
     width: 220px;
     height: auto;
     filter: drop-shadow(0 0 20px #00aaff);
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 /* INTERACTIVE BOXES */
